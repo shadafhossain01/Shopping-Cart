@@ -1,0 +1,60 @@
+[
+  {
+    "id": 1,
+    "name": "Classic White T-Shirt",
+    "desc": "Soft cotton white tee for a clean and minimal look.",
+    "image": "https://images.unsplash.com/photo-1574180566232-aaad1b5b8450?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&q=80&w=687",
+    "price": 250
+    
+  },
+  {
+    "id": 2,
+    "name": "Graphic Black Tee",
+    "desc": "Trendy printed T-shirt for a bold statement.",
+    "image": "https://images.unsplash.com/photo-1701056035604-6a7dd0efa0d7?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&q=80&w=1170",
+    "price": 350
+    
+  },
+  {
+    "id": 3,
+    "name": "Blue Denim Jacket",
+    "desc": "Modern fit denim jacket with button closure.",
+    "image": "https://images.unsplash.com/photo-1527016021513-b09758b777bd?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&q=80&w=1172",
+    "price": 950
+  },
+  {
+    "id": 4,
+    "name": "Leather Bomber Jacket",
+    "desc": "Premium faux leather jacket for a classy style.",
+    "image": "https://images.unsplash.com/photo-1727516299214-c4d54704b045?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&q=80&w=736",
+    "price": 1200
+  },
+  {
+    "id": 5,
+    "name": "Chunky Sneakers",
+    "desc": "Comfortable and stylish sneakers for daily wear.",
+    "image": "https://images.unsplash.com/photo-1512374382149-233c42b6a83b?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&q=80&w=735",
+    "price": 700
+  },
+  {
+    "id": 6,
+    "name": "Canvas Slip-ons",
+    "desc": "Lightweight and breathable casual shoes.",
+    "image": "https://images.unsplash.com/photo-1542291026-7eec264c27ff?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&q=80&w=1170",
+    "price": 550
+  },
+  {
+    "id": 7,
+    "name": "Baseball Cap",
+    "desc": "Adjustable cotton cap for sun protection.",
+    "image": "https://images.unsplash.com/photo-1691256676359-20e5c6d4bc92?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&q=80&w=880",
+    "price": 200
+  },
+  {
+    "id": 8,
+    "name": "Leather Belt",
+    "desc": "Durable leather belt with metal buckle.",
+    "image": "https://images.unsplash.com/photo-1664286074240-d7059e004dff?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&q=80&w=1170",
+    "price": 400
+  }
+]
