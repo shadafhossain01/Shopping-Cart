@@ -3,7 +3,7 @@ import { useSelector } from "react-redux";
 
 const ProductsDisplay = () => {
 
-    const data=useSelector(state=>state.cart)
+    const data=useSelector(state=>state.home)
 
   return (
     <div className="grid grid-cols-2 gap-x-7">
