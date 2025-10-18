@@ -7,10 +7,10 @@ const Cart = () => {
 
   const data=useSelector(state=>state.cart)
 
-  return <div className="flex justify-between">
+  return data.length>0? (<div className="flex justify-between">
 <CartProduct data={data}/>
 <BillingDetails data={data}/>
-  </div>;
+  </div>):<p className="text-center font-bold  text-[29px] my-[50px] italic">No Produts Added to Cart</p>;
 };
 
 export default Cart;
