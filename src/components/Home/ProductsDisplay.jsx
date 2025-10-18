@@ -24,7 +24,7 @@ const ProductsDisplay = () => {
         });
       }
       else{
-        dispath(addToCart(product))
+        dispath(addToCart({...product,quantity:1}))
         toast.success("Product Added to Cart", {
           position: "bottom-right",
           autoClose: 5000,
