@@ -1,9 +1,43 @@
 import React from "react";
-import { useSelector } from "react-redux";
+import { useDispatch, useSelector } from "react-redux";
+import { Bounce, toast } from "react-toastify";
+import { addToCart } from "../../redux/features/cart/cartSlice";
 
 const ProductsDisplay = () => {
-
+  const dispath=useDispatch()
     const data=useSelector(state=>state.home)
+    const cartData=useSelector(state=>state.cart)
+
+    const handleAddToCart=(product)=>{
+      const isExits= cartData.some(item=>item.id==product.id)
+      if (isExits) {
+        toast.error("Product Already Added to Cart", {
+          position: "bottom-right",
+          autoClose: 5000,
+          hideProgressBar: false,
+          closeOnClick: false,
+          pauseOnHover: false,
+          draggable: true,
+          progress: undefined,
+          theme: "dark",
+          transition: Bounce,
+        });
+      }
+      else{
+        dispath(addToCart(product))
+        toast.success("Product Added to Cart", {
+          position: "bottom-right",
+          autoClose: 5000,
+          hideProgressBar: false,
+          closeOnClick: false,
+          pauseOnHover: false,
+          draggable: true,
+          progress: undefined,
+          theme: "dark",
+          transition: Bounce,
+        });
+      }
+    }
 
   return (
     <div className="grid grid-cols-2 gap-x-7">
@@ -27,7 +61,7 @@ const ProductsDisplay = () => {
               <button className="font-bold text-indigo-600 text-[20px] ">
                 ${product.price}
               </button>
-              <button className="btn btn-primary mt-[5px]">Add to Cart</button>
+              <button onClick={()=>handleAddToCart(product)} className="btn btn-primary mt-[5px]">Add to Cart</button>
             </div>
           </div>
         </div>
