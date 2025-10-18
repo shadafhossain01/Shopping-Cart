@@ -1,6 +1,7 @@
 import React from "react";
 import { useSelector } from "react-redux";
 import { Link } from "react-router-dom";
+import userPic from "../../assets/shadafhossain.png"
 
 const Navbar = () => {
 
@@ -24,6 +25,16 @@ const Navbar = () => {
           <div className="dropdown dropdown-end mr-[15px]">
             <Link to="/cart" className="text-white font-semibold">
               Cart
+            </Link>
+          </div>
+          <div className="dropdown dropdown-end mr-[15px]">
+            <Link to="/post" className="text-white font-semibold">
+              Post
+            </Link>
+          </div>
+          <div className="dropdown dropdown-end mr-[15px]">
+            <Link to="/user" className="text-white font-semibold">
+              User
             </Link>
           </div>
           <div className="dropdown dropdown-end">
@@ -79,10 +90,7 @@ const Navbar = () => {
               className="btn btn-ghost btn-circle avatar bg-white"
             >
               <div className="w-10 rounded-full">
-                <img
-                  alt="Tailwind CSS Navbar component"
-                  src="https://img.daisyui.com/images/stock/photo-1534528741775-53994a69daeb.webp"
-                />
+                <img alt="Tailwind CSS Navbar component" src={userPic} />
               </div>
             </div>
             <ul
