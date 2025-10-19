@@ -1,13 +1,94 @@
 {
-  "posts": [
-    { "id": "1", "title": "a title", "views": 100 },
-    { "id": "2", "title": "another title", "views": 200 }
-  ],
-  "comments": [
-    { "id": "1", "text": "a comment about post 1", "postId": "1" },
-    { "id": "2", "text": "another comment about post 1", "postId": "1" }
-  ],
-  "profile": {
-    "name": "typicode"
-  }
+  "users": [
+    {
+      "id": "1",
+      "name": "Aarav Khan",
+      "age": 28,
+      "profession": "Software Engineer",
+      "city": "Dhaka",
+      "email": "aarav.khan@example.com",
+      "phone": "+8801712345678"
+    },
+    {
+      "id": "2",
+      "name": "Nadia Rahman",
+      "age": 24,
+      "profession": "Graphic Designer",
+      "city": "Chittagong",
+      "email": "nadia.rahman@example.com",
+      "phone": "+8801811223344"
+    },
+    {
+      "id": "3",
+      "name": "Fahim Hossain",
+      "age": 32,
+      "profession": "Digital Marketer",
+      "city": "Sylhet",
+      "email": "fahim.hossain@example.com",
+      "phone": "+8801912345670"
+    },
+    {
+      "id": "4",
+      "name": "Maya Islam",
+      "age": 29,
+      "profession": "UI/UX Designer",
+      "city": "Rajshahi",
+      "email": "maya.islam@example.com",
+      "phone": "+8801555123456"
+    },
+    {
+      "id": "5",
+      "name": "Tanvir Alam",
+      "age": 35,
+      "profession": "Project Manager",
+      "city": "Khulna",
+      "email": "tanvir.alam@example.com",
+      "phone": "+8801677889900"
+    },
+    {
+      "id": "6",
+      "name": "Rafi Chowdhury",
+      "age": 27,
+      "profession": "Frontend Developer",
+      "city": "Dhaka",
+      "email": "rafi.chowdhury@example.com",
+      "phone": "+8801300112233"
+    },
+    {
+      "id": "7",
+      "name": "Sadia Akter",
+      "age": 30,
+      "profession": "Content Writer",
+      "city": "Barishal",
+      "email": "sadia.akter@example.com",
+      "phone": "+8801700998877"
+    },
+    {
+      "id": "8",
+      "name": "Mehedi Hasan",
+      "age": 26,
+      "profession": "Data Analyst",
+      "city": "Rangpur",
+      "email": "mehedi.hasan@example.com",
+      "phone": "+8801400332211"
+    },
+    {
+      "id": "9",
+      "name": "Lubna Karim",
+      "age": 31,
+      "profession": "Software Tester",
+      "city": "Gazipur",
+      "email": "lubna.karim@example.com",
+      "phone": "+8801800445566"
+    },
+    {
+      "id": "10",
+      "name": "Rashedul Islam",
+      "age": 33,
+      "profession": "Network Engineer",
+      "city": "Narayanganj",
+      "email": "rashedul.islam@example.com",
+      "phone": "+8801999887766"
+    }
+  ]
 }
