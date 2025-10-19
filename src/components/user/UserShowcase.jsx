@@ -10,7 +10,7 @@ const UserShowcase = () => {
 
   return <div className="grid grid-cols-3 gap-[25px]">
   {
-    data.map(user=><UserProfile user={user}/>)
+    data?.map(user=><UserProfile user={user}/>)
   }
   </div>;
 };
