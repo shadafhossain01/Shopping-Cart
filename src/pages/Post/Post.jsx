@@ -11,12 +11,12 @@ const Post = () => {
     setPostData(postData.filter(item=>item.id!=id))
   }
 
-  useEffect(() => {
-    setPostData(data);
-  }, [postData]);
-
   if(isLoading) <p>Loading....</p>
   if(error) <p>{error.message}</p>
+
+    useEffect(() => {
+      setPostData(data);
+    }, [data]);
 
   return (
     <div className="grid grid-cols-3 gap-[5px] mt-10">

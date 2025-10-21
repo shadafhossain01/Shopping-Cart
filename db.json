@@ -1,15 +1,6 @@
 {
   "users": [
     {
-      "id": "1",
-      "name": "Aarav Khan",
-      "age": 28,
-      "profession": "Software Engineer",
-      "city": "Dhaka",
-      "email": "aarav.khan@example.com",
-      "phone": "+8801712345678"
-    },
-    {
       "id": "2",
       "name": "Nadia Rahman",
       "age": 24,
@@ -17,24 +8,6 @@
       "city": "Chittagong",
       "email": "nadia.rahman@example.com",
       "phone": "+8801811223344"
-    },
-    {
-      "id": "3",
-      "name": "Fahim Hossain",
-      "age": 32,
-      "profession": "Digital Marketer",
-      "city": "Sylhet",
-      "email": "fahim.hossain@example.com",
-      "phone": "+8801912345670"
-    },
-    {
-      "id": "4",
-      "name": "Maya Islam",
-      "age": 29,
-      "profession": "UI/UX Designer",
-      "city": "Rajshahi",
-      "email": "maya.islam@example.com",
-      "phone": "+8801555123456"
     },
     {
       "id": "5",
@@ -48,7 +21,7 @@
     {
       "id": "6",
       "name": "Rafi Chowdhury",
-      "age": 27,
+      "age": "25",
       "profession": "Frontend Developer",
       "city": "Dhaka",
       "email": "rafi.chowdhury@example.com",
