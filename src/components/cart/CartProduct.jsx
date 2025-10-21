@@ -4,18 +4,21 @@ import { useDispatch } from "react-redux";
 import { decreaseQuantity, increaseQuantity, removeCart } from "../../redux/features/cart/cartSlice";
 
 const CartProduct = ({data}) => {
-    const dispath=useDispatch()
-    const handleIncreaseQuantity = (id) => {
-    dispath(increaseQuantity(id))
-    };
-    const handleDiscreaseQuantity=(item)=>{
-        if(item.quantity>1){
-            dispath(decreaseQuantity(item.id));
-        }
-        else{
-            dispath(removeCart(item.id))
-        }
+  const dispath = useDispatch();
+
+  // Handle Quantity Increase
+  const handleIncreaseQuantity = (id) => {
+    dispath(increaseQuantity(id));
+  };
+
+  // Handle Quantity discrease
+  const handleDiscreaseQuantity = (item) => {
+    if (item.quantity > 1) {
+      dispath(decreaseQuantity(item.id));
+    } else {
+      dispath(removeCart(item.id));
     }
+  };
 
   return (
     <div className=" basis-4xl ">
@@ -40,13 +43,18 @@ const CartProduct = ({data}) => {
           </div>
           <div>
             <div>
+
+              {/* Increase Btn */}
               <button
                 className="btn"
                 onClick={() => handleIncreaseQuantity(item.id)}
               >
                 +
               </button>
+
               <button className="btn">{item.quantity}</button>
+
+              {/* discrease Btn */}
               <button
                 className="btn"
                 onClick={() => handleDiscreaseQuantity(item)}
@@ -54,12 +62,19 @@ const CartProduct = ({data}) => {
                 -
               </button>
             </div>
+
             <div className="flex items-center gap-4 mt-[15px]">
               <h3 className="font-bold text-[18px]">
                 ${item.price * item.quantity}
               </h3>
-              <ImCross className="text-red-700 cursor-pointer" onClick={()=>dispath(removeCart(item.id))} />
+
+              {/* Remove Cart Product Btn */}
+              <ImCross
+                className="text-red-700 cursor-pointer"
+                onClick={() => dispath(removeCart(item.id))}
+              />
             </div>
+
           </div>
         </div>
       ))}

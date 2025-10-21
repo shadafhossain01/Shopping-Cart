@@ -8,6 +8,7 @@ const ProductsDisplay = () => {
     const data=useSelector(state=>state.home)
     const cartData=useSelector(state=>state.cart)
 
+    // PRoduct Add to Cart Functionality
     const handleAddToCart=(product)=>{
       const isExits= cartData.some(item=>item.id==product.id)
       if (isExits) {
@@ -61,6 +62,8 @@ const ProductsDisplay = () => {
               <button className="font-bold text-indigo-600 text-[20px] ">
                 ${product.price}
               </button>
+
+              {/* Add To Cart Btn */}
               <button onClick={()=>handleAddToCart(product)} className="btn btn-primary mt-[5px]">Add to Cart</button>
             </div>
           </div>

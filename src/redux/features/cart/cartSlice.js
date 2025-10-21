@@ -1,31 +1,36 @@
 import { createSlice } from "@reduxjs/toolkit";
 
-const initialState=[]
+const initialState = [];
 
-const cartSlice=createSlice({
-    name:"cartSlice",
-    initialState,
-    reducers:{
-        addToCart:(state,actions)=>{
-            state.push(actions.payload)
-        },
+const cartSlice = createSlice({
+  name: "cartSlice",
+  initialState,
+  reducers: {
+    // Add to Cart Functionality
+    addToCart: (state, actions) => {
+      state.push(actions.payload);
+    },
+
+    // Increase Product quantity on Cart Page Functionality
     increaseQuantity: (state, action) => {
-      const item = state.find(i => i.id === action.payload);
+      const item = state.find((i) => i.id === action.payload);
       if (item) {
         item.quantity += 1;
       }
     },
 
+    // Discrease Product quantity on Cart Page Functionality
     decreaseQuantity: (state, action) => {
-      const item = state.find(i => i.id === action.payload);
-        item.quantity -= 1;
+      const item = state.find((i) => i.id === action.payload);
+      item.quantity -= 1;
     },
 
-    removeCart:(state,actions)=>{
-       return  state.filter(item=>item.id!==actions.payload)
-    }
-    }
-})
+    // Remove Product from Cart Functionality
+    removeCart: (state, actions) => {
+      return state.filter((item) => item.id !== actions.payload);
+    },
+  },
+});
 
-export const { addToCart, increaseQuantity, decreaseQuantity, removeCart } =cartSlice.actions;
+export const { addToCart, increaseQuantity, decreaseQuantity, removeCart } = cartSlice.actions;
 export default cartSlice.reducer;

@@ -53,15 +53,6 @@
       "city": "Gazipur",
       "email": "lubna.karim@example.com",
       "phone": "+8801800445566"
-    },
-    {
-      "id": "10",
-      "name": "Rashedul Islam",
-      "age": 33,
-      "profession": "Network Engineer",
-      "city": "Narayanganj",
-      "email": "rashedul.islam@example.com",
-      "phone": "+8801999887766"
     }
   ]
 }

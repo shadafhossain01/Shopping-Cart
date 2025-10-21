@@ -2,18 +2,19 @@ import React from "react";
 import { useGetDeleteDataMutation } from "../../redux/features/user/userApi";
 
 const UserProfile = ({ user, setformData, setUpdateUser, setUpdateUserID }) => {
-
   const [getDeleteData] = useGetDeleteDataMutation();
 
+  // Handle Edit User Functionality
   const handleEditUser = (user) => {
     setformData(user);
     setUpdateUser(true);
-    setUpdateUserID(user.id)
+    setUpdateUserID(user.id);
   };
 
-  const handleDeleteUser=async(id)=>{
-    await getDeleteData(id)
-  }
+  // Handle Delete User Functionality
+  const handleDeleteUser = async (id) => {
+    await getDeleteData(id);
+  };
 
   return (
     <div className="shadow-xl mb-[10px] p-[15px]">
@@ -30,18 +31,22 @@ const UserProfile = ({ user, setformData, setUpdateUser, setUpdateUserID }) => {
       <h3 className="font-bold text-[15px] mb-[7px]">Email: {user.email}</h3>
       <h3 className="font-bold text-[15px] mb-[7px]">Phone: {user.phone}</h3>
       <div className="flex gap-[15px] my-[15px]">
+        {/* Edit User Btn */}
         <button
           className="btn bg-green-500 text-white font-bold"
           onClick={() => handleEditUser(user)}
         >
           Edit
         </button>
+
+        {/* Delete User Btn */}
         <button
           className="btn bg-red-500 text-white font-bold"
           onClick={() => handleDeleteUser(user.id)}
         >
           Delete
         </button>
+        
       </div>
     </div>
   );

@@ -6,6 +6,7 @@ const Post = () => {
   const [deletePost] = useDeletePostMutation();
   const [postData,setPostData]=useState([])
 
+  // Delete Post from JSON Placeholder Functionality
   const handleDeletePost=async(id)=>{
     await deletePost(id)
     setPostData(postData.filter(item=>item.id!=id))
@@ -30,12 +31,15 @@ const Post = () => {
             <h2 className="card-title">{post.title}</h2>
             <p>{post.body}</p>
             <div className="card-actions justify-end">
+
+            {/* Post Delete Btn */}
               <button
                 className="btn btn-primary"
                 onClick={() => handleDeletePost(post.id)}
               >
                 Delete
               </button>
+              
             </div>
           </div>
         </div>

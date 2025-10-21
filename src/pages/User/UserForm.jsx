@@ -8,12 +8,36 @@ const UserForm = ({
   setUpdateUser,
   updateUserID,
 }) => {
-
   const [addData] = useAddDataMutation();
   const [getUpdateData] = useGetUpdateDataMutation();
 
+  // Add User Functionality
   const handleAddUser = (e) => {
     e.preventDefault();
+
+    // From Field is Empty or not Checking
+    if (
+      formData.name == "" ||
+      formData.profession == "" ||
+      formData.age == "" ||
+      formData.city == "" ||
+      formData.phone == "" ||
+      formData.email == ""
+    ) {
+      toast.error("From Field Should not Empty", {
+        position: "bottom-right",
+        autoClose: 5000,
+        hideProgressBar: false,
+        closeOnClick: false,
+        pauseOnHover: false,
+        draggable: true,
+        progress: undefined,
+        theme: "dark",
+        transition: Slide,
+      });
+      return
+    }
+
     addData(formData);
     setformData({
       name: "",
@@ -36,11 +60,12 @@ const UserForm = ({
     });
   };
 
+  // Update User Functionality
   const handleUpdateUser = (e) => {
     e.preventDefault();
     getUpdateData({
-      id:updateUserID,
-      data:formData,
+      id: updateUserID,
+      data: formData,
     });
     setformData({
       name: "",
@@ -50,7 +75,7 @@ const UserForm = ({
       phone: "",
       email: "",
     });
-    setUpdateUser(false)
+    setUpdateUser(false);
   };
 
   return (
@@ -60,6 +85,7 @@ const UserForm = ({
           Add New User !
         </h2>
         <form>
+          {/* User Name  */}
           <div className="mb-[7px]">
             <label className="font-medium">User Name:</label>
             <input
@@ -73,6 +99,7 @@ const UserForm = ({
               className="block border-2 w-[350px] border-gray-300 rounded-[4px] p-[4px] bg-gray-200 mt-[5px]"
             />
           </div>
+          {/* User Profession  */}
           <div className="mb-[7px]">
             <label className="font-medium">User Profession:</label>
             <input
@@ -86,6 +113,7 @@ const UserForm = ({
               className="block border-2 w-[350px] border-gray-300 rounded-[4px] p-[4px] bg-gray-200 mt-[5px]"
             />
           </div>
+          {/* User City  */}
           <div className="mb-[7px]">
             <label className="font-medium">City:</label>
             <input
@@ -99,6 +127,7 @@ const UserForm = ({
               className="block border-2 w-[350px] border-gray-300 rounded-[4px] p-[4px] bg-gray-200 mt-[5px]"
             />
           </div>
+          {/* User Age  */}
           <div className="mb-[7px]">
             <label className="font-medium">Age:</label>
             <input
@@ -112,6 +141,7 @@ const UserForm = ({
               className="block border-2 w-[350px] border-gray-300 rounded-[4px] p-[4px] bg-gray-200 mt-[5px]"
             />
           </div>
+          {/* User Phone Number  */}
           <div className="mb-[7px]">
             <label className="font-medium">Phone Number:</label>
             <input
@@ -125,6 +155,7 @@ const UserForm = ({
               className="block border-2 w-[350px] border-gray-300 rounded-[4px] p-[4px] bg-gray-200 mt-[5px]"
             />
           </div>
+          {/* User Email  */}
           <div className="mb-[7px]">
             <label className="font-medium">Email:</label>
             <input
@@ -139,6 +170,7 @@ const UserForm = ({
             />
           </div>
 
+          {/* User Update or Add Btn  */}
           <div className="mt-[25px]">
             {updateUser ? (
               <button
@@ -159,6 +191,7 @@ const UserForm = ({
         </form>
       </div>
 
+      {/* Toastify Notification */}
       <ToastContainer
         position="bottom-right"
         autoClose={5000}
