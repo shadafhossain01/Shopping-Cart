@@ -7,19 +7,18 @@ A modern **React + Redux Toolkit** web app featuring **CRUD operations, a dynami
 Built for learning and practice with **mock APIs (JSON Server + JSONPlaceholder)** and styled using **Tailwind CSS + DaisyUI** for a clean, responsive UI.
 
 ![Home Page](./src/assets/home.png)
----
 
-## 🔗 GitHub Repository
+---
+### 🔗 GitHub Repository
 
 👉 [https://github.com/shadafhossain01/Shopping-Cart.git](https://github.com/shadafhossain01/Shopping-Cart.git)
 
-## 🔗 Live Link
+### 🔗 Live Link
 
 👉 [https://shopping-cart-xi-sepia.vercel.app](https://shopping-cart-xi-sepia.vercel.app)
 
 ---
-
-# 🚀 Tech Stack
+## 🚀 Tech Stack
 
 | Category               | Technology Used                      |
 | ---------------------- | ------------------------------------ |
@@ -32,7 +31,7 @@ Built for learning and practice with **mock APIs (JSON Server + JSONPlaceholder)
 
 
 
-# 📂 Project Structure & Features
+## 📂 Project Structure & Features
 
 ## 📰 **Post Page**
 
@@ -71,7 +70,7 @@ Built for learning and practice with **mock APIs (JSON Server + JSONPlaceholder)
 ![Cart Page](./src/assets/cart.png)
 ---
 
-# 🧩 Key Functionalities
+## 🧩 Key Functionalities
 
 * ✅ Full **CRUD operations** using RTK Query + JSON Server
 * ✅ **Cart management** using Redux Toolkit state
@@ -82,7 +81,7 @@ Built for learning and practice with **mock APIs (JSON Server + JSONPlaceholder)
 
 
 
-# ⚙️ How to Run Locally
+## ⚙️ How to Run Locally
 
 ```bash
 # 1️⃣ Clone the repository
@@ -106,7 +105,7 @@ Then open the app in your browser:
 ---
 
 
-# 📊 Features Summary
+## 📊 Features Summary
 
 | Page             | Features                                 | Data Source             |
 | ---------------- | ---------------------------------------- | ----------------------- |
